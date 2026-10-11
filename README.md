@@ -319,27 +319,14 @@ The project is deployed on Render.
 For a static-site deployment, configure the build command and publish directory according to the actual Vite configuration. The usual Vite output directory is `dist`; verify the build output before configuring deployment.
 
 ## 🖼️ Screenshots
-
-Screenshots of the application can be added here to demonstrate the user interface and main features.
-
-Suggested screenshots:
-
-- Login page
-- Employee directory and search filters
-- Workforce analytics dashboard
-- Attendance management
-- Payroll analytics
-- Employee inquiry/helpdesk section
-
-Example Markdown syntax:
-
-```markdown
-![Login Page](screenshots/login.png)
-![Employee Directory](screenshots/employee-directory.png)
-![Analytics Dashboard](screenshots/analytics.png)
-```
-
-Create a `screenshots/` directory and add the corresponding image files before using these links.
+<img width="1332" height="583" alt="image" src="https://github.com/user-attachments/assets/ccfa97d9-d0c2-44ac-8fb3-48a879ebd73a" />
+<img width="1337" height="589" alt="image" src="https://github.com/user-attachments/assets/da1d4921-d576-4d12-9554-3bb164b017b5" />
+<img width="1330" height="595" alt="image" src="https://github.com/user-attachments/assets/6e1dafd3-d972-4878-8861-f8a1a9f5f5f5" />
+<img width="1335" height="589" alt="image" src="https://github.com/user-attachments/assets/077cd08a-d573-4ded-9fdf-e438cf2676d0" />
+<img width="1338" height="588" alt="image" src="https://github.com/user-attachments/assets/5ae90462-fe5b-4e94-bf29-10633821ef7e" />
+<img width="1331" height="593" alt="image" src="https://github.com/user-attachments/assets/d0189e0d-3151-4a86-925a-209360c63743" />
+<img width="1336" height="592" alt="image" src="https://github.com/user-attachments/assets/45f7d6c8-61d4-4b32-ba3d-ecf27f25c29e" />
+<img width="1340" height="594" alt="image" src="https://github.com/user-attachments/assets/6173d7fa-eb6e-4d73-90c1-ebdfa24ad3bf" />
 
 ## 🧩 Challenges Faced
 

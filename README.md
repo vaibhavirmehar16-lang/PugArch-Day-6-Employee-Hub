@@ -1,75 +1,418 @@
 # PugWork. — People Ops, Simplified
 
-[![Live Demo](https://img.shields.io/badge/Demo-Live%20on%20Render-4f46e5?style=for-the-badge&logo=render)](https://pugarch-day-6-employee-hub.onrender.com/)
-[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/vaibhavirmehar16-lang/PugArch-Day-6-Employee-Hub/tree/main)
-[![React 19](https://img.shields.io/badge/React-19.0.0-61dafb?style=for-the-badge&logo=react)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.7.2-3178c6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![Vite](https://img.shields.io/badge/Vite-6.2.0-646cff?style=for-the-badge&logo=vite)](https://vitejs.dev/)
+<p align="center">
+  <strong>A Modern Employee Management & Workforce Analytics Dashboard</strong>
+</p>
+
+<p align="center">
+  <a href="https://pugarch-day-6-employee-hub.onrender.com/">
+    <img src="https://img.shields.io/badge/Demo-Live%20on%20Render-4f46e5?style=for-the-badge&logo=render" alt="Live Demo"/>
+  </a>
+  <a href="https://github.com/vaibhavirmehar16-lang/PugArch-Day-6-Employee-Hub">
+    <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github" alt="GitHub Repository"/>
+  </a>
+  <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react" alt="React"/>
+  <img src="https://img.shields.io/badge/TypeScript-5.7-3178C6?style=for-the-badge&logo=typescript" alt="TypeScript"/>
+  <img src="https://img.shields.io/badge/Vite-6-646CFF?style=for-the-badge&logo=vite" alt="Vite"/>
+</p>
 
 ---
 
 ## 📌 Project Overview
-**PugWork.** is an enterprise-grade People Operations and Workforce Analytics web platform tailored for modern HR teams. Featuring a high-end glassmorphic aesthetic, live attendance clocking, department payroll distribution calculations, interactive helpdesk ticket resolutions, and real-time personnel filters, PugWork bridges the gap between raw workforce data and operational insights.
 
-* **Live Deployment:** [https://pugarch-day-6-employee-hub.onrender.com/](https://pugarch-day-6-employee-hub.onrender.com/)
-* **Source Code Repository:** [https://github.com/vaibhavirmehar16-lang/PugArch-Day-6-Employee-Hub/tree/main](https://github.com/vaibhavirmehar16-lang/PugArch-Day-6-Employee-Hub/tree/main)
+**PugWork** is a modern People Operations and Workforce Analytics web application designed to simplify employee management and HR workflows through a unified, interactive dashboard.
 
----
+Built with React, TypeScript, and Vite, the platform brings employee records, attendance tracking, payroll insights, training programs, and helpdesk inquiries together in a clean and responsive interface.
+
+The application features a modern glassmorphic design, dynamic employee filtering, workforce analytics, attendance controls, and browser-based data persistence.
+
+- **Live Demo:** [PugWork on Render](https://pugarch-day-6-employee-hub.onrender.com/)
+- **GitHub Repository:** [PugArch Day 6 — Employee Hub](https://github.com/vaibhavirmehar16-lang/PugArch-Day-6-Employee-Hub)
+- **Project Type:** Frontend Web Application
+- **Deployment:** Render
 
 ## 🎯 Problem Statement
-Legacy human resource management systems often suffer from:
-1. Cluttered, outdated enterprise user interfaces that hinder rapid record navigation.
-2. Rigid monolithic data structures lacking client-side dynamic search and multi-parameter filtering.
-3. Decoupled tracking where attendance shifts, support tickets, and payroll calculations exist across fragmented spreadsheets.
 
-**PugWork.** solves this by delivering a lightweight, single-page reactive dashboard with cohesive workforce analytics, time-tracking logs, and payroll breakdowns in a modern, Gen-Z styled interface.
+Traditional employee management workflows often rely on disconnected spreadsheets and outdated interfaces, making workforce information difficult to organize and analyze.
 
----
+Common challenges include:
+
+1. Finding employee records quickly across large directories.
+2. Tracking employee attendance and employment status efficiently.
+3. Understanding salary distribution across departments.
+4. Managing employee training programs and internal support requests.
+5. Generating useful workforce reports without manually processing data.
+6. Maintaining a consistent and accessible experience across different screen sizes.
+
+**Solution:** PugWork provides a centralized dashboard with interactive employee management, attendance controls, payroll analytics, training information, and helpdesk functionality.
 
 ## ✨ Features
 
-### 1. Enterprise Authentication & Security
-* Glassmorphic login portal with architectural backdrop and subtle depth lighting.
-* One-click demo credentials autofill (`admin@workforce.com`).
-* Interactive password visibility toggle (Show/Hide) and 30-day session persistence via browser storage.
+### 1. 🔐 Login Interface
 
-### 2. Live Employee Directory
-* Real-time search by employee name, role, or email with zero network latency.
-* Multi-parameter department filtering (`Engineering`, `Product`, `Design`, `HR`, `Marketing`).
-* Employment status filtering (`Active`, `On Leave`, `Inactive`) with ascending/descending salary and alphabetical sorting.
-* Modal dialogue to append custom employee records into persistent local storage.
+- Modern login interface with a glassmorphic design.
+- Demo credential autofill.
+- Show/hide password functionality.
+- Remember-me option using browser storage.
+- Login and logout interactions.
 
-### 3. Real-Time Shift & Time Tracking (Attendance)
-* Interactive **Clock In / Clock Out** action toggle stamping current localized timestamps.
-* Visual status categorization (`Present`, `Remote`, `Late`).
+### 2. 👥 Employee Directory
 
-### 4. Automated Payroll & Finance Metrics
-* Department-level dynamic budget calculation and total salary distribution metrics.
-* Real-time derivation of monthly disbursements and per-employee departmental averages.
+- View employee details, including name, email, role, department, salary, and joining date.
+- Search employees by name, role, or email.
+- Filter records by department and employment status.
+- Sort employees alphabetically or by salary.
+- Add new employee records through a modal form.
+- Persist employee records using browser `localStorage`.
 
-### 5. Helpdesk & Team Inquiries
-* Ticket triage desk with categorization (`Hardware`, `Payroll`, `Leave`, `General`).
-* Direct status toggle (`Open` ↔ `Resolved`) updating the sidebar's live notification badge.
+### 3. 📊 Workforce Analytics
 
-### 6. Data Portability & Reporting
-* Client-side CSV export generating formatted records of verified workforce details.
+- Display workforce statistics and employee metrics.
+- Calculate total payroll expenditure and average salary.
+- Summarize employee counts and employment status.
+- Present workforce information in an analytics-oriented dashboard.
 
----
+### 4. 🎓 Training Management
+
+- Display available training programs.
+- View trainers, departments, enrollment counts, and program status.
+- Track training completion percentages.
+
+### 5. ⏰ Attendance Management
+
+- Interactive clock-in and clock-out controls.
+- Display attendance records and timestamps.
+- Categorize attendance as Present, Late, or Remote.
+
+### 6. 💰 Payroll Analytics
+
+- Calculate total salary expenditure.
+- Compare payroll distribution across departments.
+- Display department-level salary metrics.
+- Derive average salary figures from employee records.
+
+### 7. 🎫 Helpdesk & Employee Inquiries
+
+- Display employee support tickets.
+- Categorize inquiries into Payroll, Leave, Hardware, and General.
+- Toggle ticket status between Open and Resolved.
+- Display support information in an organized interface.
+
+### 8. 📥 Data Export
+
+- Export employee information to a CSV file.
+- Support basic workforce reporting and data portability.
+
+### 9. 🎨 Modern User Interface
+
+- Clean, dashboard-oriented layout.
+- Glassmorphism-inspired visual styling.
+- Responsive layouts using CSS Grid and Flexbox.
+- Interactive icons powered by Lucide React.
+- Reusable React components and typed data structures.
 
 ## 🛠️ Technology Stack
 
-| Layer | Technologies |
-| :--- | :--- |
-| **Frontend Framework** | React 19 (Functional Components, Hooks) |
-| **Language** | TypeScript (Strict Typing & Custom Interfaces) |
-| **Tooling & Bundler** | Vite 6 |
-| **Icons & Design Assets** | Lucide React |
-| **Styling Paradigm** | Modern Inline CSS Modules, Glassmorphism, CSS Grid & Flexbox |
-| **State & Persistence** | React State (`useState`, `useMemo`), Browser `localStorage` API |
-| **Hosting & CI/CD** | Render (Static Site Deployment connected via GitHub Webhooks) |
-
----
+| Category | Technologies |
+|---|---|
+| Frontend Framework | React 19 |
+| Programming Language | TypeScript 5.7 |
+| Build Tool & Development Server | Vite 6 |
+| Styling | CSS, CSS Grid, Flexbox, glassmorphism |
+| Icons | Lucide React |
+| State Management | React Hooks (`useState`, `useEffect`, `useMemo`) |
+| Browser Persistence | Web Storage API (`localStorage`) |
+| Data Modeling | TypeScript interfaces and types |
+| Version Control | Git and GitHub |
+| Deployment | Render |
 
 ## 🏗️ Architecture
 
-PugWork follows a clean Single Page Application (SPA) reactive architecture:
+PugWork follows a **client-side Single Page Application (SPA) architecture**. React manages the interface and application state, while TypeScript provides structured data models and type checking.
+
+### Architecture Flow
+
+```text
+              User Interaction
+                     |
+                     v
+             React User Interface
+                     |
+                     v
+             Application Logic
+             /       |        \
+            v        v         v
+       Employee   Attendance  Payroll &
+       Directory  & Tickets   Analytics
+            |
+            v
+       React State
+            |
+            v
+     Browser localStorage
+            |
+            v
+      Persistent Employee Data
+```
+
+### Project Structure
+
+```text
+PugArch-Day-6-Employee-Hub/
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.ts
+├── tsconfig.json
+├── react-app/
+│   └── src/
+│       ├── App.tsx
+│       ├── main.tsx
+│       ├── index.css
+│       ├── mockData.ts
+│       └── types.ts
+└── README.md
+```
+
+- **`App.tsx`** — Main application interface, React state, event handlers, filtering, calculations, and dashboard functionality.
+- **`main.tsx`** — Application entry point.
+- **`index.css`** — Global styles and interface styling.
+- **`mockData.ts`** — Initial employee records.
+- **`types.ts`** — TypeScript interfaces and types for employees, training programs, attendance, and inquiry tickets.
+- **`package.json`** — Project dependencies and development scripts.
+- **`vite.config.ts`** — Vite configuration.
+
+## 🗄️ Database Design
+
+PugWork currently uses **browser `localStorage` and in-memory React state**, rather than a traditional backend database.
+
+### Employee Data Model
+
+| Field | Type | Description |
+|---|---|---|
+| `id` | String | Unique employee identifier |
+| `name` | String | Employee name |
+| `role` | String | Job title |
+| `department` | String | Employee department |
+| `status` | String | Active, On Leave, or Inactive |
+| `salary` | Number | Employee salary |
+| `email` | String | Employee email address |
+| `joinDate` | String | Employee joining date |
+
+### Data Persistence
+
+- Initial employee records are loaded from `mockData.ts`.
+- Saved employee records are retrieved from `localStorage` when the application initializes.
+- Changes to employee records are synchronized with browser storage through `useEffect`.
+- Attendance, training, and ticket information currently use predefined sample data and React state.
+
+**Important:** Browser storage is specific to the user's browser and origin. It is not a shared database and does not provide server-side access control or synchronization between users.
+
+## 🔌 API Documentation
+
+**No custom backend API is currently implemented.**
+
+The application operates primarily on the client side using local data and browser APIs.
+
+| Operation | Implementation |
+|---|---|
+| Fetch initial employees | `INITIAL_EMPLOYEES` from `mockData.ts` |
+| Read saved employees | `localStorage.getItem()` |
+| Save employee records | `localStorage.setItem()` |
+| Manage interface state | React Hooks |
+| Export employee data | Client-side CSV generation |
+
+There are no custom REST endpoints, authentication APIs, or server-side database queries in the current implementation.
+
+## ⚙️ Installation
+
+### Prerequisites
+
+Install the following before running the project:
+
+- [Node.js](https://nodejs.org/) — preferably an active LTS release.
+- npm, which is included with Node.js.
+- [Git](https://git-scm.com/).
+- A code editor such as [Visual Studio Code](https://code.visualstudio.com/).
+
+### Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/vaibhavirmehar16-lang/PugArch-Day-6-Employee-Hub.git
+```
+
+### Step 2: Open the Project Directory
+
+```bash
+cd PugArch-Day-6-Employee-Hub
+```
+
+### Step 3: Install Dependencies
+
+```bash
+npm install
+```
+
+### Step 4: Start the Development Server
+
+```bash
+npm run dev
+```
+
+Open the local URL displayed in the terminal, usually:
+
+```text
+http://localhost:5173/
+```
+
+### Step 5: Create a Production Build
+
+```bash
+npm run build
+```
+
+To preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## 🔑 Environment Variables
+
+The current frontend implementation does not require custom environment variables or API keys.
+
+| Variable | Required | Purpose |
+|---|---|---|
+| None | No | The current application runs without custom environment configuration. |
+
+If a backend, external API, or database is introduced in a future version, environment variables can be configured for those services.
+
+**Security note:** Never place private API keys, passwords, or other secrets in frontend code or publicly exposed Vite environment variables.
+
+## ▶️ How to Run
+
+After completing installation:
+
+1. Open the project directory in your terminal.
+2. Run `npm install` if dependencies have not been installed.
+3. Execute `npm run dev`.
+4. Open the local development URL in your browser.
+5. Explore the employee directory, analytics, training, attendance, payroll, and inquiry sections.
+6. Use the available employee-management controls to interact with the dashboard.
+
+### Demo Login
+
+The application includes a demo login interface with prefilled credentials.
+
+- **Email:** `admin@workforce.com`
+- **Password:** `admin123`
+
+Use these only for the demonstration interface. The current client-side login flow is not production-grade authentication and should not be used to protect real employee data.
+
+## 🚀 Deployment
+
+The project is deployed on Render.
+
+- **Live Application:** [https://pugarch-day-6-employee-hub.onrender.com/](https://pugarch-day-6-employee-hub.onrender.com/)
+- **Source Repository:** [https://github.com/vaibhavirmehar16-lang/PugArch-Day-6-Employee-Hub](https://github.com/vaibhavirmehar16-lang/PugArch-Day-6-Employee-Hub)
+
+For a static-site deployment, configure the build command and publish directory according to the actual Vite configuration. The usual Vite output directory is `dist`; verify the build output before configuring deployment.
+
+## 🖼️ Screenshots
+
+Screenshots of the application can be added here to demonstrate the user interface and main features.
+
+Suggested screenshots:
+
+- Login page
+- Employee directory and search filters
+- Workforce analytics dashboard
+- Attendance management
+- Payroll analytics
+- Employee inquiry/helpdesk section
+
+Example Markdown syntax:
+
+```markdown
+![Login Page](screenshots/login.png)
+![Employee Directory](screenshots/employee-directory.png)
+![Analytics Dashboard](screenshots/analytics.png)
+```
+
+Create a `screenshots/` directory and add the corresponding image files before using these links.
+
+## 🧩 Challenges Faced
+
+### 1. Managing Multiple Dashboard Sections
+
+Keeping employee records, attendance, payroll, training, and support tickets organized within a single application required clear separation of data and interface state.
+
+### 2. Dynamic Employee Filtering and Sorting
+
+Combining search terms, department filters, employment status filters, and sorting options required coordinated filtering and transformation of employee records.
+
+### 3. Maintaining Data After Refresh
+
+React state resets on a page reload unless the data is persisted elsewhere. Employee records therefore needed browser-based persistence.
+
+### 4. Consistent Type-Safe Data Models
+
+Different dashboard sections required different fields and status values, making structured data definitions important.
+
+### 5. Workforce Calculations
+
+Payroll totals, average salaries, and employee counts needed to be derived consistently from the employee data.
+
+## ✅ Solutions
+
+- Used React Hooks to manage application state and synchronize saved employee data.
+- Defined TypeScript interfaces and types for employees, training programs, attendance records, and support tickets.
+- Used derived calculations and filtering logic to update displayed results dynamically.
+- Stored employee changes in `localStorage` for persistence across page reloads in the same browser.
+- Used reusable styling patterns, CSS Grid, Flexbox, and Lucide React icons to create a consistent dashboard interface.
+- Used Vite for local development and production builds.
+
+## 🔮 Future Improvements
+
+- **Backend Integration:** Add a Node.js/Express backend with a REST API.
+- **Database:** Integrate PostgreSQL, MySQL, or MongoDB for centralized employee data.
+- **Secure Authentication:** Implement server-side authentication, role-based access control, and secure session management.
+- **Real Attendance System:** Add server-side attendance records, timestamps, and reporting.
+- **Advanced Analytics:** Add charts, department comparisons, workforce trends, and more detailed payroll reports.
+- **Employee Profiles:** Introduce editable profiles, profile photos, and detailed employment history.
+- **Training Management:** Support enrollment, course assignments, and completion tracking.
+- **Helpdesk Enhancements:** Add ticket creation, assignment, priority levels, and activity history.
+- **Data Validation:** Improve form validation and error handling.
+- **Automated Testing:** Add unit tests and end-to-end tests.
+- **Accessibility:** Improve keyboard navigation, semantic markup, and screen-reader support.
+- **CI/CD:** Add automated build checks and deployment workflows through GitHub Actions.
+
+## 📚 Learning Outcomes
+
+This project provides practical experience with:
+
+- Building a React application using functional components and Hooks.
+- Using TypeScript interfaces and types to model application data.
+- Managing UI state and browser-based persistence.
+- Implementing search, filtering, sorting, and data calculations.
+- Creating responsive dashboard layouts with CSS.
+- Using Git and GitHub for source control.
+- Building and deploying a frontend application with Vite and Render.
+
+## 👨‍💻 Author
+
+**Project:** PugWork — People Ops, Simplified
+
+**Repository:** [PugArch Day 6 — Employee Hub](https://github.com/vaibhavirmehar16-lang/PugArch-Day-6-Employee-Hub)
+
+**Live Demo:** [Open PugWork](https://pugarch-day-6-employee-hub.onrender.com/)
+
+---
+
+<p align="center">
+  Built with React, TypeScript, and Vite.
+</p>
+
+<p align="center">
+  If you find this project useful, consider giving the repository a ⭐ on GitHub.
+</p>
